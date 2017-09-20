@@ -1,0 +1,448 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: url(../img/bg.png) no-repeat center center;
+	background-attachment: fixed;
+    background-size: cover;
+	position: relative;
+}
+p {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+input, textarea {
+	width: 100%;
+}
+.separator {
+	position: relative;
+	padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.separator:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border-bottom: 1px solid #ddd;
+    bottom: 0;
+}
+.separator:after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #60BE74;
+    width: 15%;
+    bottom: -1px;
+    left: 0;
+}
+.landing_page_wrapper .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+.landing_page_wrapper .col-md-6:not(:first-child) {
+    background: url(../img/vertical_border.png) no-repeat left center;
+    background-size: contain;
+}
+.logo {
+    margin: 0 auto 45px !important;
+	position:  relative;
+    max-width: 212px;
+}
+.logo a img {
+    height: 150px;
+	margin: 0 auto;
+}
+.phone_number, .description {
+    color: #FFF;
+}
+.phone_number h2 {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.description {
+	padding: 0 50px;
+}
+
+.logo .shop_now {
+    display: inherit !important;
+    position: absolute;
+    right: -60px;
+    bottom: 15px;
+    background-color: #60be74 !important;
+}
+/* Promoted products */
+.promoted_product {
+    overflow: hidden;
+}
+.promoted_product .products-grid .item {
+	margin-top: 0;
+}
+.promoted_product .products-grid .item .item-inner .item-img .item-img-info a.product-image img {
+
+}
+
+
+/*---------------------------- Wholesale landing page css ------------------------*/
+.wholesale_landing {
+	background-color: #FFF;
+	background-image: none;
+}
+.wholesale_header {
+    background-image: -webkit-linear-gradient(top, #fff 0, #f8f8f8 100%);
+    background-image: -o-linear-gradient(top, #fff 0, #f8f8f8 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8));
+    background-image: linear-gradient(to bottom, #fff 0, #f8f8f8 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+}
+.wholesale_logo {
+    padding: 10px 0;
+}
+.wholesale_logo img {
+    height: 65px;
+    position: absolute;
+    width: 160px;
+    height: auto;
+    z-index: 999;
+    margin-left: -34px;
+}
+.wholesale_phone {
+    text-align: right;
+    padding: 35px 0;
+}
+.wholesale_phone h2 {
+    margin: 0;
+    color: #666;
+}
+.wholesale_phone span {
+    padding-right: 12px;
+    color: #60BE74;
+}
+
+
+
+/*--=== Slider Background ===--*/
+.slider {
+    overflow: hidden;
+}
+.slider .carousel-inner {
+    height: 100%;
+    background-color: #60BE74;
+}
+.slider .carousel-inner .item {
+    background-repeat: no-repeat;
+}
+.carousel-intro {
+    padding: 15% 0;
+}
+.carousel-title,.crousel-subtitle {
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.carousel-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.crousel-subtitle {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+.carousel-intro p {
+    font-size: 16px;
+    //padding: 0 15%;
+    color: #fff;
+}
+.bwbg {
+    background-color: #fff;
+    border-color: #ff;
+}
+.bc {
+    border: 2px solid #fff !important;
+    color: #FFF;
+}
+.bwbg:hover {
+    color: #FFF;
+    border-color: #03AFEF;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .carousel-intro {
+		padding: 140px 0;
+	}
+	.carousel-intro h2 {
+		font-size: 40px !important;
+		width: 61% !important;
+		margin-bottom: 10px !important;
+	}
+	.carousel-intro p {
+		padding: 0 0;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.carousel-intro {
+		padding: 140px 0;
+	}
+    .carousel-intro h2 {
+		font-size: 36px !important;
+		width: 100% !important;
+		margin-bottom: 10px !important;
+		background: transparent !important;
+		padding: 0px 0 !important;
+		text-shadow: none !important;
+	}
+	.carousel-intro p {
+		padding: 0 0;
+	}
+	.carousel-intro .btn {
+		margin-bottom: 10px;
+	}
+}
+/*--===Slider Control ===--*/
+.carousel-inner {
+    margin-top: 0 !important;
+}
+.carousel-control {
+    top: 50% !important;
+    width: 60px !important ;
+    height: 60px !important;
+    color: #FFF !important;
+    text-shadow: none !important;
+    position: absolute !important;
+    background-color: #000 !important;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	-khtml-opacity: 0.5 !important;
+	-moz-opacity: 0.5 !important;
+	   opacity: 0.5 !important;
+	   filter: alpha(opacity=50);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.carousel-control span {
+    color: #FFF;
+    font-size: 38px !important;
+    font-weight: 100 !important;
+    line-height: 56px;
+}
+.carousel-control.left {
+    left: -60px;
+}
+.carousel-control.right {
+    right: -60px;
+}
+#main-slider:hover .carousel-control.left {
+    left: -10px;
+}
+#main-slider:hover .carousel-control.right {
+    right: -10px;
+}
+.carousel-control.left:hover, .carousel-control.right:hover {
+	background-color: #666 !important;
+    background-image: none;
+    color: #FFF !important;
+}
+
+/*--== Animations Delay ===--*/
+.animation-delay-3 {
+    -webkit-animation-delay: .3s !important;
+    -moz-animation-delay: .3s !important;
+    -ms-animation-delay: .3s !important;
+    -o-animation-delay: .3s !important;
+    animation-delay: .3s !important;
+}
+.animation-delay-4 {
+    -webkit-animation-delay: .4s !important;
+    -moz-animation-delay: .4s !important;
+    -ms-animation-delay: .4s !important;
+    -o-animation-delay: .4s !important;
+    animation-delay: .4s !important;
+}
+.animation-delay-5 {
+    -webkit-animation-delay: .5s !important;
+    -moz-animation-delay: .5s !important;
+    -ms-animation-delay: .5s !important;
+    -o-animation-delay: .5s !important;
+    animation-delay: .5s !important;
+}
+.animation-delay-6 {
+    -webkit-animation-delay: .6s !important;
+    -moz-animation-delay: .6s !important;
+    -ms-animation-delay: .6s !important;
+    -o-animation-delay: .6s !important;
+    animation-delay: .6s !important;
+}
+.animation-delay-7 {
+    -webkit-animation-delay: .7s !important;
+    -moz-animation-delay: .7s !important;
+    -ms-animation-delay: .7s !important;
+    -o-animation-delay: .7s !important;
+    animation-delay: .7s !important;
+}
+.animation-delay-8 {
+    -webkit-animation-delay: .8s !important;
+    -moz-animation-delay: .8s !important;
+    -ms-animation-delay: .8s !important;
+    -o-animation-delay: .8s !important;
+    animation-delay: .8s !important;
+}
+.animation-delay-9 {
+    -webkit-animation-delay: .9s !important;
+    -moz-animation-delay: .9s !important;
+    -ms-animation-delay: .9s !important;
+    -o-animation-delay: .9s !important;
+    animation-delay: .9s !important;
+}
+.animation-delay-10 {
+    -webkit-animation-delay: 1s !important;
+    -moz-animation-delay: 1s !important;
+    -ms-animation-delay: 1s !important;
+    -o-animation-delay: 1s !important;
+    animation-delay: 1s !important;
+}
+/*--=== Slider Background ===--*/
+.wholesale_content {
+    padding: 60px 0;
+}
+.wholesale_content .carousel-title {
+    color: #252525;
+    text-transform: capitalize;
+    margin: 0;
+	padding-bottom: 20px;
+}
+.wholesale_about_us h3, .wholesale_contact_us h3 {
+    font-weight: 600;
+	color: #666;
+}
+
+/* Contact */
+.wholesale_content {
+    padding: 60px 0;
+    background: url(../img/pineapples.jpg) no-repeat bottom center;
+    background-size: cover;
+}
+.wholesale_contact .form-group label {
+    display: block;
+    overflow: hidden;
+}
+
+
+.wholesale_contact .form-group input,
+.wholesale_contact .form-group textarea {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.wholesale_contact .form-group input:hover,
+.wholesale_contact .form-group input:focus,
+.wholesale_contact .form-group input:active,
+.wholesale_contact .form-group textarea:hover,
+.wholesale_contact .form-group textarea:focus,
+.wholesale_contact .form-group textarea:active {
+    border-color: #60BE74;
+}
+
+#wholesale_submit {
+    max-width: 200px;
+    border-radius: 0;
+    border: 1px solid #60BE74;
+    background-color: #60BE74;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.wholesale_footer_top {
+    padding: 50px 0;
+    background-color: #F5F5F5;
+}
+.wholesale_footer_top p {
+    color: #252525;
+    font-style: italic;
+}
+.wholesale_footer_top .location span,
+.wholesale_footer_top .mobile span {
+    font-size: 52px;
+    margin-right: 15px;
+	float: left;
+}
+.wholesale_footer_top .email span {
+	font-size: 37px;
+	float: left;
+    margin-right: 15px;
+}
+.wholesale_footer_top .mobile p{
+    overflow: hidden;
+    padding-top: 15px;
+}
+.wholesale_footer_top .email p {
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.wholesale_footer {
+    background-color: #333333;
+    color: #a2a2a2;
+    padding: 20px 0;
+}
+.wholesale_footer p {
+    margin: 0;
+}
+
+/* Responsive css */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .wholesale_wrap {
+        margin-bottom: 40px;
+    }
+    .logo .shop_now {
+        position: inherit;
+        right: inherit;
+        bottom: -55px;
+        background-color: #60be74 !important;
+        display: inline-block !important;
+    }
+    .foodie_bilss_wrap .logo {
+        margin-bottom: 80px !important;
+    }
+    .description {
+        padding: 0 10px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .wholesale_wrap {
+        margin-bottom: 40px;
+    }
+    .description {
+        padding: 0 10px;
+    }
+}

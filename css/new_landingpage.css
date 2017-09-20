@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body{
+	font-size: 16px;
+	font-family: 'FoundrySterling';
+}
+p {
+	line-height: 24px;
+}
+.border_bottom {
+    border-bottom: 1px solid #DDD;
+    padding: 50px 0;
+}
+.border_right {
+	border-right: 1px solid #DDD;
+}
+.area_title h1 {
+    margin-top: 0;
+}
+
+.banner_area {
+    background: #60BE74;
+    padding: 50px 0 0;
+    position: relative;
+}
+.banner_title h1 {
+	color: #FFF;
+	font-size: 40px;
+	margin: 0 0 50px;
+text-shadow: -3px 2px 6px #000;
+}
+.banner_logo {
+    width: 80%;
+}
+.banner_area h2 {
+    color: #FFF;
+    margin-left: 60px
+}
+form.wpcf7-form >h2 {
+    margin: 10px 0 30px;
+}
+.contact_form {
+    background: #f5f5f5;
+    padding: 25px 25px 10px;
+    border-radius: 4px;
+    border: 1px solid #DDD;
+    position: absolute;
+    width: 100%;
+    top: -10px;
+}
+.contact_form h2 {
+    margin-top: 0;
+   color: #333;
+}
+.form-group > label {
+    display: block;
+}
+.contact_form .custom_btn {
+    background-color: #60BE74;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #FFF;
+float: right;
+}
+
+.call_to_action_area {
+	
+}
+.single_col {
+    display: inline-flex;
+    align-items: center;
+padding-top: 30px;
+}
+.single_col span.fa {
+    font-size: 52px;
+    margin-right: 15px;
+}
+.single_col p {
+    color: #252525;
+    font-style: italic;
+    margin-bottom: 0;
+}
+.phone_number span {
+    float: left;
+}
+.phone_number {
+    display: block;
+}
+.about_us_area {
+	
+}
+
+.footer_area {
+    
+}
+.footer_area_content_wrap {
+    display: inline-flex;
+    align-items: center;
+}
+
+.copyright {
+    padding: 30px 0;
+}
+.copyright p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.banner_logo {
+	    width: 40%;
+	    margin: 0 auto;
+	}
+	.banner_area h2 {
+	    text-align: center;
+	}
+	.footer_area_logo img {
+	    margin: 0 auto;
+	}
+	.footer_area_content {
+	    text-align: center;
+	}
+	.copyright {
+	    text-align: center;
+	}
+.contact_form {
+    position: static;
+}
+.contact_form .custom_btn {
+    float: none;
+}
+}
+@media (max-width: 768px) {
+	.banner_title h1 {
+	    font-size: 40px;
+	}
+	.banner_logo {
+	    width: 50%;
+	    margin: 0 auto;
+	}
+	.banner_area h2 {
+	    text-align: center;
+	}
+	.single_col {
+	    margin-bottom: 20px;
+	}
+	.footer_area_content_wrap {
+	    display: block;
+	    border: 0;
+	}
+	.footer_area_logo {
+	    margin-bottom: 20px;
+	}
+	.footer_area_logo img {
+	    margin: 0 auto;
+	}
+	.footer_area_content {
+	    text-align: center;
+	}
+	.copyright {
+	    text-align: center;
+	}
+.contact_form {
+    position: static;
+}
+.contact_form .custom_btn {
+    float: none;
+}
+}
+
+.screen-reader-response {
+    display: none;
+}
+.wpcf7-not-valid-tip {
+    color: red;
+}
+.wpcf7-not-valid {
+    border-color: red;
+}
+.wpcf7-validation-errors {
+    color: red;
+}
